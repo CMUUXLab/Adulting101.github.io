@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+
+body {
+    padding: 0;
+    margin: 0;
+    background: #ffffff;
+    font-size: 22px;
+    position:relative;
+}
+@media (max-width:750px){
+    .py-5{
+        padding-top:13px !important;
+        padding-bottom:13px !important;
+    }
+}
+@media (max-width:750px){
+    .px-4{
+        padding-right:13px !important;
+        padding-left:13px !important;
+    }
+}
+@media (max-width:750px){
+    section {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+}
+
+
+@media (min-width: 768px){
+    .navbar-nav li {
+    margin-left: 50px;
+}
+}
+
+@media (min-width: 768px){
+    p{
+    font-size:30px;
+    font-family: 'Quicksand';
+}
+}
+
+@media (max-width: 750px){
+    p{
+    font-family: 'Quicksand';
+    font-size:10px;
+}
+}
+
+@media (min-width: 768px){
+    p1{
+    font-size:30px;
+    font-family: 'Source Sans Pro';
+}
+}
+@media (max-width: 750px){
+    p1{
+    font-family: 'Source Sans Pro';
+    font-size:14px;
+}
+}
+
+@media (min-width: 768px){
+    p2 {
+    color:rgb(255, 255, 255);
+    font-family: 'Source Sans Pro';
+    font-size:30px;
+    }  
+}
+@media (max-width: 750px){
+    p2 {
+    color:rgb(255, 255, 255);
+    font-family: 'Source Sans Pro';
+    }  
+}
+
+@media (min-width: 768px){
+    p3{
+    font-size:24px;
+    font-family: 'Source Sans Pro';
+    font-style:italic;
+}
+}
+@media (max-width: 750px){
+    p3{
+    font-family: 'Source Sans Pro';
+    font-style:italic;
+    font-size:13px;
+}
+}
+
+@media (min-width: 768px){
+    h2{
+    font-size:38px;
+    font-weight:bolder;
+    font-family:'Quicksand';
+}
+}
+@media (max-width: 750px){
+    h2{
+    font-weight:bolder;
+    font-family:'Quicksand';
+    font-size:15px;
+}
+}
+
+@media (min-width: 768px){
+    h3 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    color:#000000
+}
+}
+@media (max-width: 750px){
+    h3 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    color:#000000
+}
+}
+
+@media (min-width: 768px){
+    .space { 
+    margin:0; padding:0; height:50px 
+} 
+}
+@media (max-width: 750px){
+    .space { 
+    margin:0; padding:0; height:10px 
+} 
+}
+@media (min-width:768px){
+    .space1 { 
+    margin:0; padding:0; height:25px 
+} 
+}
+@media (max-width:750px){
+    .space1 { 
+    margin:0; padding:0; height:25px 
+} 
+}
+
+
+@media (min-width: 768px){
+    #day3 {
+    display: block;
+    max-width: 90%;
+    height: auto;
+  }
+}
+
+@media (min-width: 768px){
+    #img6{
+    display:block;
+    max-width:75%;
+    height:auto;
+}
+}
+@media (min-width: 768px){
+    #arrow{
+    display:block;
+    max-width:120%;
+    height:auto
+}
+}
+@media (min-width: 768px){
+    #waitlist{
+    display:block;
+    max-width:120%;
+    height:auto;
+}
+}
+@media (min-width: 768px){
+    #frame2{
+    display:block;
+    max-width:95%;
+    height:auto;
+}
+}
+@media (min-width:768px){
+    #buttonpic{
+        display:block;
+        max-width:100%;
+        height:auto;
+    }
+}
+@media (min-width:768px){
+    #star{
+        display:block;
+        max-width:140%;
+        height:auto;
+    }
+}
+@media (max-width:750px){
+    #buttonpic{
+        display:block;
+        max-width:120%;
+        height:auto;
+    }
+}
