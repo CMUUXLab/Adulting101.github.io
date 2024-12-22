@@ -28,10 +28,11 @@
                             style="color:black; font-family:'Quicksand'; font-weight:bolder;">HOW IT WORKS</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about us"
                             style="color:black; font-family:'Quicksand'; font-weight:bolder;">ABOUT US</a></li>
-                        <li class="nav-item"><a class="nav-link" 
-                            href="https://forms.gle/XpBWvFbwr4WA7XZj8" target=blank
+                        <li class="nav-item"><a class="nav-link" href="#waitlist"
                             style="background-color:rgb(0, 0, 0); color:rgb(255, 255, 255); 
                             font-family:'Quicksand'; font-weight:bolder;
+                            width: 246px;
+                            padding: 10px 20px;
                             border-radius: 10px 10px 10px 10px;">
                             JOIN THE WAITLIST</a></li>
                     </ul>
@@ -121,8 +122,10 @@
                 </div>
             </div>
         </section>
+
+
         <!-- Waitlist section-->
-        <section id="Waitlist">
+        <section id="waitlist">
             <div class="container px-5">
                 <div class="row">
                     <p class="fw-lighter text-center">Sign up with your email below</p>
@@ -135,12 +138,19 @@
                     </div>
                     <div class="col-6">
                         <div class="space"></div>
-                        <!--button input type="button" 
-                        style="width:430px;height:70px;background:transparent; border:none; "></button>-->
+                        
+                        <input type="image"
+                            img src="assets/Button.png" 
+                            class="img-fluid text-center" 
+                            alt="Responsive image" 
+                            id="buttonpic"
+                        />
+                        <!-- OLD Google Forms BUTTON
                         <a href="https://forms.gle/XpBWvFbwr4WA7XZj8" target=blank>
                             <img src="assets/Button.png" class="img-fluid text-center" alt="Responsive image" 
                             id="buttonpic">
                         </a>
+                        -->
 
                     </div>
                     <div class="col-3">
@@ -150,6 +160,26 @@
             </div>
             </div>
         </section>
+
+        <!-- Lightbox -->
+        <div id="lightbox">
+            <div class="lightbox-content">
+                <h2>WE'RE SO GLAD YOU'RE INTERESTED!</h2>
+                <form id="signup-form">
+                    <label for="email">
+                        Enter your email below to get on our waiting list. 
+                        <br> 
+                        We'll email you with any updates we have in the meantime.
+                    </label><br>
+                    <input type="email" id="email" required placeholder="your email"><br><br>
+                        <button type="submit" id="signupButton">Sign Me Up!</button>
+                    <p id="message"></p>
+                </form>
+            </div>
+            <button class="close-btn" id="close-lightbox">&times;</button>
+        </div>
+
+
         <!-- ABOUT US section-->
         <section class="bg-black"  id="about us">
             <div class="container px-5">

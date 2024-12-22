@@ -732,10 +732,14 @@ progress {
   width: 8.33333333%;
 }
 
+
+
 .col-2 {
   flex: 0 0 auto;
   width: 16.66666667%;
 }
+
+
 
 .col-3 {
   flex: 0 0 auto;
@@ -7660,7 +7664,7 @@ textarea.form-control-lg {
 }
 
 .lh-lg {
-  line-height: 2 !important;
+  line-height: 1.5  !important;
 }
 
 .text-start {
