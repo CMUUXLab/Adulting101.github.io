@@ -30,13 +30,15 @@ body {
 
 @media (min-width: 768px){
     .navbar-nav li {
-    margin-left: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+    
 }
 }
 
 @media (min-width: 768px){
     p{
-    font-size:30px;
+    font-size:25px;
     font-family: 'Quicksand';
 }
 }
@@ -44,19 +46,19 @@ body {
 @media (max-width: 750px){
     p{
     font-family: 'Quicksand';
-    font-size:10px;
+    font-size:14px;
 }
 }
 
 @media (min-width: 768px){
     p1{
     font-size:30px;
-    font-family: 'Source Sans Pro';
+    font-family: 'Quicksand';
 }
 }
 @media (max-width: 750px){
     p1{
-    font-family: 'Source Sans Pro';
+    font-family: 'Quicksand';
     font-size:14px;
 }
 }
@@ -64,14 +66,14 @@ body {
 @media (min-width: 768px){
     p2 {
     color:rgb(255, 255, 255);
-    font-family: 'Source Sans Pro';
+    font-family: 'Quicksand';
     font-size:30px;
     }  
 }
 @media (max-width: 750px){
     p2 {
     color:rgb(255, 255, 255);
-    font-family: 'Source Sans Pro';
+    font-family: 'Quicksand';
     font-size:15px;
     }  
 }
@@ -79,13 +81,13 @@ body {
 @media (min-width: 768px){
     p3{
     font-size:24px;
-    font-family: 'Source Sans Pro';
+    font-family: 'Quicksand';
     font-style:italic;
 }
 }
 @media (max-width: 750px){
     p3{
-    font-family: 'Source Sans Pro';
+    font-family: 'Quicksand';
     font-style:italic;
     font-size:13px;
 }
@@ -185,7 +187,7 @@ body {
 @media (min-width: 768px){
     #frame2{
     display:block;
-    max-width:95%;
+    width:80%;
     height:auto;
 }
 }
@@ -243,6 +245,7 @@ body {
     width: 70%;
     z-index: 5;
     font-size: 12px;
+    position: relative;
 }
 
 .lightbox-content h2 {
@@ -285,15 +288,20 @@ body {
 }
 
 /* Close Button */
-.close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 50px;
-    color: red;
+#lightbox .close-btn {
+    /*position: absolute;*/
+    margin-bottom: 1px;
+    margin-left: 90%;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: black;
     background: transparent;
     border: none;
     cursor: pointer;
+    z-index: 1000;
+    box-shadow: none;
+    
 }
 
 /* Button Style */

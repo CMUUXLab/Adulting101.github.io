@@ -39,25 +39,42 @@
                 </div>
             </div>
         </nav>
-        <!-- About section-->
+        <!-- About section -->
         <section id="project">
             <div class="container px-4">
                 <div class="row">
-                    <div class="col-2"></div>
-                    <div class="col-4">
+
+                    <!-- Let's Attempt to make a splash image -->
+                    <div class="card" style="width:100%" >
+                        <img class="card-img-top" src="assets/Splash-Image.png" alt="Card image">
+                        <div class="card-img-overlay">
+                            <div class="space"></div>
+                            <img src="assets/Frame 1.png" style="padding-right: 45%" class="img-fluid" alt="Responsive image" >
+                            <div class="space"></div>
+                            <p class="lh-lg" style="min-width: 106%; padding-right: 54%;">An app for anyone who wants to learn everything that everyone else
+                                already seems to know. Through daily tasks, we'll  
+                                guide you step-by-step through everything from cooking to finances.
+                            </p>
+                        </div>
+                        
+
+                    <!-- <div class="col-2"></div>  -->
+                    <!-- ORIGINAL CODE
+                     
+                    <div class="col-1"></div>
+                    <div class="col-4 offset-45">
                         <div class="space"></div>
                         <img src="assets/Frame 1.png" class="img-fluid" alt="Responsive image" >
                         <div class="space"></div>
-                        <p class="lh-lg">An app for anyone who wants to 
-                            learn everything it seems like other
-                            adults already seem to know. 
-                            Through daily tasks, this app will 
-                            guide you step by step through 
-                            everything from cooking to finances.</p>
+                        <p class="lh-lg">An app for anyone who wants to learn everything it seems like other
+                            adults already seem to know. Through daily tasks, this app will  
+                            guide you step by step through everything from cooking to finances.
+                        </p>
                     </div>
                     <div class="col-6">
                         <img src="assets/Frame 2.png" class="img-fluid " alt="Responsive image" id="frame2">
                     </div>
+                -->
                 </div>
             </div>
         </section>
@@ -66,7 +83,7 @@
             <!--part 1-->
             <div class="container">
                 <div class="row">
-                    <div class="col-4 offset-1">
+                    <div class="col-4">
                         <img src="assets/Home Page.png" class="img-fluid" alt="Responsive image" id="day3">
                     </div>
                     <div class="col-1">
@@ -164,6 +181,7 @@
         <!-- Lightbox -->
         <div id="lightbox">
             <div class="lightbox-content">
+                <button class="close-btn" id="close-lightbox">&times;</button> <!-- Ensure this button is here -->
                 <h2>WE'RE SO GLAD YOU'RE INTERESTED!</h2>
                 <form id="signup-form">
                     <label for="email">
@@ -176,7 +194,6 @@
                     <p id="message"></p>
                 </form>
             </div>
-            <button class="close-btn" id="close-lightbox">&times;</button>
         </div>
 
 
