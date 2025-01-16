@@ -70,36 +70,36 @@ document.getElementById('signup-form').addEventListener('submit', async (e) => {
     const emailInput = document.getElementById('email');
     const message = document.getElementById('message');
     const email = emailInput.value;
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxfuqEWlhFJUXuYL4FB6OpQMFuuzzpXPKRgRJJTcO1jaaqgADeCBGIWZm3z9xn9ZYPL/exec';
+    //^ this is the web URL for data recording
 
-    // Replace with your Apps Script Web App URL
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxs17v1WgHxIySsLHbaNdF8d2YmWi5YBXl3Y6TkeYqRaBH7KrFr8btaTq-TULC4xLp0/exec';
 
-    try {
-        const response = await fetch(scriptURL, {
-            method: 'POST',
-            body: JSON.stringify({ email }),
-            headers: { 'Content-Type': 'application/json' },
-        });
+        try {
+            const response = await fetch(scriptURL, {
+                method: 'POST',
+                body: JSON.stringify({ email }),
+                headers: { 'Content-Type': 'application/json' },
+            });
 
-        const result = await response.text();
-        if (result === 'Success') {
-            message.textContent = 'Thank you for signing up!';
-            message.style.color = 'green';
-            emailInput.value = '';
+            const result = await response.text();
+            if (result === 'Success') {
+                message.textContent = 'Thank you for signing up!';
+                message.style.color = 'green';
+                emailInput.value = '';
 
-            // Hide the lightbox after a short delay
-            setTimeout(() => {
-                lightbox.style.display = 'none';
-            }, 2000);
-        } else {
-            message.textContent = 'Oops! Something went wrong.';
+                // Hide the lightbox after a short delay
+                setTimeout(() => {
+                    lightbox.style.display = 'none';
+                }, 2000);
+            } else {
+                message.textContent = 'Oops! Something went wrong.';
+                message.style.color = 'red';
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            message.textContent = 'There was a problem. Please try again later.';
             message.style.color = 'red';
         }
-    } catch (error) {
-        console.error('Error:', error);
-        message.textContent = 'There was a problem. Please try again later.';
-        message.style.color = 'red';
-    }
 });
 
 
