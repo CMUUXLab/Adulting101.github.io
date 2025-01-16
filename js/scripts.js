@@ -70,7 +70,7 @@ document.getElementById('signup-form').addEventListener('submit', async (e) => {
     const emailInput = document.getElementById('email');
     const message = document.getElementById('message');
     const email = emailInput.value;
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbyamtm4en5aHtAh_X9t-Vo4aiL3Fj0uOo7oVvzQSI_qAMJjukHF4UGG6qi7M4T6L_Ts/exec';
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz2evulkCzm60Efw2larTH_ohxKCmv8Qcy9aeZyKsdJ5x6NGNnNWaVdnqzIPPcU83eE/exec';
     //^ this is the web URL for data recording
 
 
@@ -79,7 +79,8 @@ document.getElementById('signup-form').addEventListener('submit', async (e) => {
                 redirect: "follow",
                 method: 'POST',
                 body: JSON.stringify({ email }),
-                headers: { 'Content-Type': 'application/json' },
+                mode: 'no-cors',
+                //headers: { 'Content-Type': 'application/json' }
             });
 
             const result = await response.text();
