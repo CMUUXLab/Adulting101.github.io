@@ -70,7 +70,7 @@ document.getElementById('signup-form').addEventListener('submit', async (e) => {
     const emailInput = document.getElementById('email');
     const message = document.getElementById('message');
     const email = emailInput.value;
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbz2evulkCzm60Efw2larTH_ohxKCmv8Qcy9aeZyKsdJ5x6NGNnNWaVdnqzIPPcU83eE/exec';
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxvpbSGjF2rE9tofAmnHUpBOocAjFfeeCWxEr-u279y_o50HKEX0N1RrUiU23d4q8NZ/exec';
     //^ this is the web URL for data recording
 
 
@@ -83,25 +83,43 @@ document.getElementById('signup-form').addEventListener('submit', async (e) => {
                 //headers: { 'Content-Type': 'application/json' }
             });
 
-            const result = await response.text();
-            if (result === 'Success') {
+            setTimeout(() => {
                 message.textContent = 'Thank you for signing up!';
                 message.style.color = 'green';
-                emailInput.value = '';
+            }, 300); // Adjust the delay as needed (in milliseconds)
 
-                // Hide the lightbox after a short delay
-                setTimeout(() => {
-                    lightbox.style.display = 'none';
-                }, 2000);
-            } else {
-                message.textContent = 'Oops! Something went wrong.';
-                message.style.color = 'red';
-            }
-        } catch (error) {
-            console.error('Error:', error);
-            message.textContent = 'There was a problem. Please try again later.';
+            // Hide the lightbox after a short delay since they successfully filled it out
+            setTimeout(() => {
+                lightbox.style.display = 'none';
+            }, 2000);
+
+
+        /* TEMPORARILY COMMENTING THIS OUT WHILE I FIGURE OUT HOW TO FIX LOGIC
+        // Since we cannot directly read the response in 'no-cors', we'll check for success
+        if (response.status >= 200 && response.status < 300) {
+            // Success message based on the custom response returned by Apps Script
+            message.textContent = 'Thank you for signing up!';
+            message.style.color = 'green';
+            emailInput.value = '';
+
+            // Hide the lightbox after a short delay
+            setTimeout(() => {
+                lightbox.style.display = 'none';
+            }, 2000);
+        } else {
+            message.textContent = 'Oops! Something went wrong.';
             message.style.color = 'red';
         }
+        */
+
+
+    } catch (error) {
+        console.error('Error:', error);
+        message.textContent = 'There was a problem. Please try again later.';
+        message.style.color = 'red';
+    }
+    
+
 });
 
 
